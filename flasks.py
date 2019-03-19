@@ -13,11 +13,17 @@ mysql.init_app(app)
 
 @app.route("/add") #Add Student
 def add():
-    name = request.args.get('name')
-    email = request.args.get('email')
+    name = request.args.post('name')
+    nickname = request.args.post('nickname')
+    birthday = request.args.post('Birthday')
+    gender = request.args.post('Gender')
+    address = request.args.post('Address')
+    phone number = request.args.post('phone number')
+    email = request.args.post('email')
+    
     cur = mysql.connection.cursor() #create a connection to the SQL instance
     #Compose an INSERT statement:
-    s='''INSERT INTO students(studentName, email) VALUES('{}','{}');'''.format(name,email)
+    s='''INSERT INTO contacts(Name, Nickname, Birthday, Gender, Address, Phone number, email) VALUES('{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phone number,email)
     cur.execute(s)
     mysql.connection.commit()
     return s
@@ -36,3 +42,4 @@ def hello(): # Name of the method
         ret=ret+'{"Name": "'+row[0]+'", "Email": "'+row[1]+'", "ID": '+str(row[2])+'}'
     ret=ret+']}'
     return ret      #Return the data in a string format
+    
