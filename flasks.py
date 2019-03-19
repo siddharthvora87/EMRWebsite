@@ -18,12 +18,12 @@ def add():
     birthday = request.args.post('Birthday')
     gender = request.args.post('Gender')
     address = request.args.post('Address')
-    phone number = request.args.post('phone number')
+    phonenumber = request.args.post('phonenumber')
     email = request.args.post('email')
     
     cur = mysql.connection.cursor() #create a connection to the SQL instance
     #Compose an INSERT statement:
-    s='''INSERT INTO contacts(Name, Nickname, Birthday, Gender, Address, Phone number, email) VALUES('{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phone number,email)
+    s='''INSERT INTO contacts(Name, Nickname, Birthday, Gender, Address, Phonenumber, email) VALUES('{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phonenumber,email)
     cur.execute(s)
     mysql.connection.commit()
     return s
