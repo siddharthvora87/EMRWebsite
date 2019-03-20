@@ -15,16 +15,18 @@ mysql.init_app(app)
 def add():
     firstname = request.args.get('firstname')
     lastname = request.args.get('lastname')
-    weight = request.args.get('weight')
+    a='''weight = request.args.get('weight')
     height = request.args.get('height')
     bloodpressure = request.args.get('bloodpressure')
     pulse = request.args.get('pulse')
     bloodsugar = request.args.get('bloodsugar')
     temperature = request.args.get('temperature')
-   
+   '''
     cur = mysql.connection.cursor() #create a connection to the SQL instance
     #Compose an INSERT statement:
-    s='''INSERT INTO contacts( FirstName,Lastname,weight,height,bloodpressure,pulse,bloodsugar,temperature) VALUES('{}','{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phonenumber,email)
+    s='''INSERT INTO contacts( FirstName,Lastname) VALUES('{}','{}');'''.format(firstname, lastname    s='''INSERT INTO contacts( FirstName,Lastname,weight,height,bloodpressure,pulse,bloodsugar,temperature) VALUES('{}','{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phonenumber,email)
+)
+#    s='''INSERT INTO contacts( FirstName,Lastname,weight,height,bloodpressure,pulse,bloodsugar,temperature) VALUES('{}','{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phonenumber,email)
     cur.execute(s)
     mysql.connection.commit()
     return s
