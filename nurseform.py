@@ -13,18 +13,18 @@ app.config['MYSQL_HOST'] = 'localhost' #for now
 mysql.init_app(app)
 @app.route("/add") #Add patient
 def add():
-   first name = request.args.get('first name')
-    last name = request.args.get('last name')
+   firstname = request.args.get('firstname')
+    lastname = request.args.get('lastname')
     weight = request.args.get('weight')
     height = request.args.get('height')
-    blood pressure = request.args.get('blood pressure')
+    bloodpressure = request.args.get('bloodpressure')
     pulse = request.args.get('pulse')
-    blood sugar = request.args.get('blood sugar')
+    bloodsugar = request.args.get('bloodsugar')
     temperature = request.args.get('temperature')
    
     cur = mysql.connection.cursor() #create a connection to the SQL instance
     #Compose an INSERT statement:
-    s='''INSERT INTO contacts( First Name,Last name,weight,height,blood pressure,pulse,blood sugar,temperature) VALUES('{}','{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phonenumber,email)
+    s='''INSERT INTO contacts( FirstName,Lastname,weight,height,bloodpressure,pulse,bloodsugar,temperature) VALUES('{}','{}','{}','{}','{}','{}','{}','{}');'''.format(name, nickname, birthday, gender, address, phonenumber,email)
     cur.execute(s)
     mysql.connection.commit()
     return s
