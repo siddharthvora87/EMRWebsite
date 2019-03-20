@@ -13,7 +13,7 @@ app.config['MYSQL_HOST'] = 'localhost' #for now
 mysql.init_app(app)
 @app.route("/add") #Add patient
 def add():
-   firstname = request.args.get('firstname')
+    firstname = request.args.get('firstname')
     lastname = request.args.get('lastname')
     weight = request.args.get('weight')
     height = request.args.get('height')
