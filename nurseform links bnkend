@@ -31,7 +31,7 @@ def add():
 @app.route("/") #Default - Show Data
 def hello(): # Name of the method
     cur = mysql.connection.cursor() #create a connection to the SQL instance
-    cur.execute('''SELECT * Nurse form''') # execute an SQL statment
+    cur.execute('''SELECT * rads''') # execute an SQL statment
     rv = cur.fetchall() #Retreive all rows returend by the SQL statment
     ret = '{"Results":[' #Create return string
     first=True
