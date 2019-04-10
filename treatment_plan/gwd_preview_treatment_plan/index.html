@@ -30,11 +30,11 @@ body {
 }
 .gwd-page-container {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 1280px;
+    height: 720px;
 }
 .gwd-page-content {
-    background-color: transparent;
+    background-color: lightblue;
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -59,10 +59,10 @@ body {
 }
 .gwd-p-ni2j {
     position: absolute;
-    top: 69px;
     height: 25px;
     width: 100px;
-    left: 50px;
+    left: 225px;
+    top: 100px;
 }
 .gwd-p-s0e9 {
     position: absolute;
@@ -71,22 +71,22 @@ body {
     -webkit-transform-origin: 65px 11.2px 0px;
     -moz-transform-origin: 65px 11.2px 0px;
     height: 25px;
-    left: 50px;
-    top: 135px;
+    left: 225px;
+    top: 166px;
 }
 .gwd-p-1f5c {
     position: absolute;
     width: 100px;
     height: 25px;
-    left: 50px;
-    top: 224px;
+    left: 225px;
+    top: 255px;
 }
 .gwd-p-1i65 {
     position: absolute;
     width: 100px;
     height: 25px;
-    left: 50px;
-    top: 299px;
+    left: 225px;
+    top: 330px;
 }
 .gwd-input-1521 {
     position: absolute;
@@ -99,17 +99,19 @@ body {
     top: 135px;
 }
 .gwd-input-1yo5 {
-    left: 165px;
-    top: 170px;
     height: 22px;
+    left: 340px;
+    top: 201px;
 }
 .gwd-input-1a7o {
-    top: 224px;
     height: 22px;
+    left: 340px;
+    top: 255px;
 }
 .gwd-input-d129 {
-    top: 299px;
     height: 22px;
+    left: 340px;
+    top: 330px;
 }
 .gwd-input-10sw {
     position: absolute;
@@ -119,26 +121,46 @@ body {
     left: 386px;
 }
 .gwd-input-73q0 {
-    left: 377px;
-    top: 170px;
     height: 22px;
+    left: 552px;
+    top: 201px;
 }
 .gwd-input-1qm8 {
-    left: 377px;
     height: 22px;
+    left: 552px;
+    top: 166px;
 }
 .gwd-p-f32f {
     position: absolute;
     width: 83px;
     height: 17.6667px;
-    left: 401px;
-    top: 110px;
+    left: 576px;
+    top: 141px;
 }
 .gwd-input-t04p {
     height: 22px;
+    left: 340px;
+    top: 166px;
 }
 .gwd-input-x4o2 {
     height: 22px;
+    left: 340px;
+    top: 100px;
+}
+.gwd-button-1l4j {
+    position: absolute;
+    width: 102px;
+    height: 25px;
+    left: 340px;
+    top: 392px;
+}
+.gwd-div-11k0 {
+    height: 800px;
+    width: 1100px;
+}
+.gwd-page-jhtu {
+    height: 800px;
+    width: 1100px;
 }</style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_min.js" data-version="6" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
@@ -148,8 +170,8 @@ body {
 
 <body class="document-body">
   <gwd-pagedeck class="gwd-page-container" id="pagedeck">
-    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox" data-gwd-width="550px" data-gwd-height="400px">
-      <div class="gwd-page-content page1-content">
+    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-jhtu" data-gwd-width="1100px" data-gwd-height="800px">
+      <div class="gwd-page-content page1-content gwd-div-11k0">
         <p class="gwd-p-ni2j">Diagnosis:</p>
         <p class="gwd-p-s0e9">Medication:</p>
         <p class="gwd-p-1f5c">Lab Tests:</p>
@@ -162,6 +184,7 @@ body {
         <input class="gwd-input-10sw gwd-input-1qm8">
         <input class="gwd-input-10sw gwd-input-73q0">
         <p class="gwd-p-f32f">Dosage:</p>
+        <button class="gwd-button-1l4j">Submit</button>
       </div>
     </gwd-page>
   </gwd-pagedeck>
