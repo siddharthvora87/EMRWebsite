@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+form{
+width:500px;
+margin:auto;
+padding:20px;
+backgroud:#663366;
+font-size:20px;
+font-family:Verdana;
+color:white;
+}
+input[type=text]{
+width:80%;
+padding:5px;
+font-size:18px;
+}
+input[type=submit]{
+width:100px;
+padding:5px;
+font-size:20px;
+}
+input[type=select]{
+padding:5px;
+font-size:20px;
+background:#e0d3e
+}
+</style>
+<body>
+
+<h2>PATIENT FORM</h2>
+
+<form action="http://51.141.120.230:8080/add">
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <br>
+  Date of Birth:<br>
+  <select name="month">
+  <option value="month">Month</option>
+  <option value="Jan">Jan</option>
+  <option value="Feb">Feb</option>
+  <option value="Mar">Mar</option>
+  <option value="Aprl">Aprl</option>
+  <option value="May">May</option>
+  <option value="June">June</option>
+  <option value="July">July</option>
+  <option value="Aug">Aug</option>
+  <option value="Sep">Sep</option>
+  <option value="Oct">Oct</option>
+  <option value="Nov">Nov</option>
+  <option value="Dec">Dec</option>
+  </select>
+  <select name="days">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+  </select>
+  <select name="years">
+  <option value="years">Years</option>
+  <option value="1980">1980</option>
+  <option value="1981">1981</option>
+  <option value="1982">1982</option> 
+  <option value="1983">1983</option>
+  <option value="2019">2019</option>
+  </select><br>
+  Patients contact No.:<br>
+  <input type="text" name="contact No."><br>
+  Patients email:<br>
+  <input type="text" name="email"><br>
+  patients address:<br>
+  <input type="text" name="Address line1"><br>
+  <input type="text" name="Address line2"><br>
+  Family details:<br>
+  <input type="text" name="Family details"><br>
+  Allergies:<br>
+  <input type="text" name="Allergies"><br>
+  Medical History:<br>
+  <input type="text" name="medical History"><br>
+  Major deseases in past 12 months:<br>
+  <input type="text" name="Deseases"><br>
+  Billing Preferences:<br>
+  <select name="cash">
+  <option value="cash">Cash</option>
+  </select>
+  <select name="Card">
+  <option value="card">Card</option>
+  <option value="paypal">Paypal</option>
+  <option value="credit">Credit</option>
+  <optio value="debit">Debit</option>
+  <input type="submit" value="Submit"> 
+</form>
+</body>
+© 2019 GitHub, Inc.
