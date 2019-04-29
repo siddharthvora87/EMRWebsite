@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.RML-btn {
+  margin-right: 10px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container{
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.tabicon{
+  width:18px;
+  height:18px;
+  display: block;
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-right: 1px;
+  padding-right: 1px;
+  float: right;
+  cursor: pointer;
+}
+
+.brand{
+ width: 13%;
+ height: 44px;
+ color: rgba(35, 130, 219, 0.979);
+ text-align: center;
+ font-family: sans-serif;
+ font-size: 34px;
+ padding: 0px px;
+ background-color: white;
+ float: left;
+ border: 2px solid rgba(35, 130, 219, 0.979);
+}
+.brand p{
+  margin-top: 3px;
+}
+div.brand:hover {
+ color: white;
+ background-color: rgba(35, 130, 219, 0.979);
+ border: 2px solid white;
+}
+
+.tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 2px;
+}
+
+div.navbar-left{
+  float: left;
+  margin-top: 5px;
+  background-color: rgba(35, 130, 219, 0.979);
+  height: 40px;
+  width: 4%;
+  padding: 0px;
+  align-content: center;
+  margin-left: 0px;
+  }
+  div.burger{
+    padding-top:  11px;
+    padding-left: 10px;
+    text-align: center;
+    color: white;
+    }
+div.navbar-right{
+  float: left;
+  margin-top: 5px;
+  background-color: rgba(35, 130, 219, 0.979);
+  height: 40px;
+  width: 82.7%;
+  padding: 0px;
+  align-content: center;
+  overflow:hidden;
+  }
+
+.MnuBar {
+    display: inline-block;
+    width: auto;
+    padding: 0px;
+    }
+#mnuitem {
+  float: left;
+  display: block;
+  width: auto;
+  color: white;
+  height: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+  cursor: pointer;
+  }
+
+#mnuitem span{
+display: block;
+width: auto;
+font-size: 20px;
+color: white;
+height: 33px;
+margin-top:0px;
+margin-bottom: 0px;
+text-align: center;
+border-bottom: 3px solid rgba(35, 130, 219, 0.979);
+border-top: 3px solid rgba(35, 130, 219, 0.979); 
+}
+
+#mnuitem p{
+  margin-top:4px;
+  text-align: center;
+  }
+#mnuitem span.select{
+  border-bottom: 3px solid red;
+  border-top: 3px solid red;
+}
+
+
+#mnuitem span:hover{
+  color: cyan;
+}
+
+#mnuitem span.select:hover{
+  color: #F1C40F;
+}
+
+#mnuitem span1:hover{
+  border-bottom: 3px solid red;
+  border-top: 3px solid red;
+  margin-top:0px;
+  margin-bottom: 0px;
+  color: white;
+}
+.mnuitems_toggle span:{
+display: none;
+}
+
+
+
+a {
+  color:inherit;
+  
+}
+.top-bar {
+  display: block;
+  margin-top: 0px;
+  padding: 0px;
+  width: 100%;
+  background-color: rgb(62, 63, 62); 
+  height: 30px;
+}
+.brandIcon{
+  color: white;
+  float: left;
+  margin-top: 3px;
+
+}
+.brandIcon #fb{
+  margin-left: 130px;
+ 
+}
+
+.brandIcon #ingrm{
+  margin-left: 20px;
+
+}
+.brandIcon #pint{
+  margin-left: 20px;
+}
+
+.label{
+  float: left;
+  margin-left: 30px;
+  margin-right: 1px;
+  margin-top: 2px;
+  font-size: 18px;
+  width: auto;
+  color:white;
+  margin-top: 8px;
+}
+
+
+.sign{
+float: right;
+margin-top: 6px;
+color: white;
+margin-right: 5px;
+font-size: 18px;
+cursor: pointer;
+}
+
+.sign:hover{
+  color: rgb(131, 221, 209);
+}
+.sign-sep{
+  float: right;
+  font-size: 22px;
+  margin-top: 3px;
+  color: #029ada;
+  margin-right: 5px;
+  font-size: 25px;
+  }
+.sign-end{
+  float: right;
+  margin-right: 50px;
+  margin-top: 6px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  }
+
+  .sign-end:hover{
+    color:  rgb(131, 221, 209);;
+    }
+
+#phoneno{
+  color: #029ada;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.brandIcon:hover{
+  color: rgb(131, 221, 209);
+}
+
+
+#burgerbtn.active {
+  margin-left: 9px;
+  margin-top: 3px;
+  }
+
+  #burgerbtn.active  span {
+    display: block;
+    width: 4.3px;
+    height: 22px;
+    background: red;
+    margin-left: 3px ;
+    margin-top: -4px;
+    float: left;
+        }
+
+  #burgerbtn.close {
+    margin-left: 6px;
+    margin-top: -6px;
+  }
+
+  #burgerbtn.close  span {
+    display: block;
+    width: 23px;
+    height: 4px;
+    background: white;
+    margin: 4px 1px;
+    }
+
+.headermnu{
+margin-top:5px;
+margin-bottom: -auto;
+}
+
+.zoom-bar{
+margin-bottom: 3px;
+margin-right: 10px;
+}
+
+#author_bio_wrap_toggle:hover
+{
+    text-decoration:none;
+    border-top: 1px groove white;
+    border-left: px groove white;
+    border-bottom: 1px solid #7B7B78;
+    border-right: 1px solid #7B7B78;
+    color: #663200;
+    background: #EBEBB3;
+    box-shadow: 1px 1px 2px #888888;
+}
+
